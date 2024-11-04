@@ -18,7 +18,6 @@ module.exports = (phase, { defaultConfig }) => {
    * @type {import("next").NextConfig}
    */
   const nextConfig = {
-    output: "export",
     swcMinify: true,
     reactStrictMode: true,
     trailingSlash: true,
@@ -119,7 +118,6 @@ module.exports = (phase, { defaultConfig }) => {
       },
     ],
     rewrites: async () => [
-      { source: "/cv", destination: "/static/CV.pdf" },
       { source: "/favicon.ico", destination: "/static/favicons/favicon.ico" },
       { source: "/favicon.png", destination: "/static/favicons/favicon.png" },
       { source: "/apple-touch-icon.png", destination: "/static/favicons/apple-touch-icon.png" },
@@ -153,6 +151,8 @@ module.exports = (phase, { defaultConfig }) => {
       },
 
       // misc. crap:
+      { source: "/resume/", destination: "/static/resume.pdf", permanent: false },
+      { source: "/resume.pdf", destination: "/static/resume.pdf", permanent: false },
       { source: "/jarvis.asc", destination: "/pubkey.asc", permanent: true },
       { source: "/scrabble/:path*", destination: "https://jakejarvis.github.io/scrabble/:path*", permanent: false },
     ],
