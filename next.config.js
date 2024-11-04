@@ -118,6 +118,7 @@ module.exports = (phase, { defaultConfig }) => {
       },
     ],
     rewrites: async () => [
+      { source: "/cv", destination: "/static/CV.pdf" }, // Cleaner URL for the CV
       { source: "/favicon.ico", destination: "/static/favicons/favicon.ico" },
       { source: "/favicon.png", destination: "/static/favicons/favicon.png" },
       { source: "/apple-touch-icon.png", destination: "/static/favicons/apple-touch-icon.png" },
@@ -134,27 +135,6 @@ module.exports = (phase, { defaultConfig }) => {
       { source: "/rss/", destination: "/feed.xml", permanent: true },
       { source: "/blog/:path*", destination: "/notes/", permanent: true },
       { source: "/archives/:path*", destination: "/notes/", permanent: true },
-      {
-        source: "/2016/02/28/millenial-with-hillary-clinton/",
-        destination: "/notes/millenial-with-hillary-clinton/",
-        permanent: true,
-      },
-      {
-        source: "/2018/12/04/how-to-shrink-linux-virtual-disk-vmware/",
-        destination: "/notes/how-to-shrink-linux-virtual-disk-vmware/",
-        permanent: true,
-      },
-      {
-        source: "/2018/12/10/cool-bash-tricks-for-your-terminal-dotfiles/",
-        destination: "/notes/cool-bash-tricks-for-your-terminal-dotfiles/",
-        permanent: true,
-      },
-
-      // misc. crap:
-      { source: "/resume/", destination: "/static/resume.pdf", permanent: false },
-      { source: "/resume.pdf", destination: "/static/resume.pdf", permanent: false },
-      { source: "/jarvis.asc", destination: "/pubkey.asc", permanent: true },
-      { source: "/scrabble/:path*", destination: "https://jakejarvis.github.io/scrabble/:path*", permanent: false },
     ],
   };
 

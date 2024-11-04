@@ -144,6 +144,24 @@ const Index = () => {
         </ColorfulLink>
       </Paragraph>
 
+      <Paragraph>
+        🚀 ¿Te interesa aprender más sobre mis proyectos y mis ideas en desarrollo? <br />
+        Te invito a explorar mi{" "}
+        <ColorfulLink href="/blog" title="Visita mi blog" lightColor="rgb(128, 159, 255)" darkColor="#FFA500">
+          blog
+        </ColorfulLink>{" "}
+        para leer artículos sobre tecnología y desarrollo de software, o visita mi{" "}
+        <ColorfulLink
+          href="https://github.com/bruno-orozco"
+          title="Ver mis proyectos en GitHub"
+          lightColor="rgb(128, 159, 255)"
+          darkColor="#FFA500"
+        >
+          perfil en GitHub
+        </ColorfulLink>{" "}
+        para conocer los repositorios en los que he estado trabajando.
+      </Paragraph>
+
       <H2>📞 Contacto</H2>
       <Paragraph>
         ¡Conversemos! Si tienes alguna idea o proyecto en mente, me encantaría escucharlo. Estoy abierto a explorar

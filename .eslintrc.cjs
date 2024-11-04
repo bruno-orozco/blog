@@ -12,6 +12,7 @@ module.exports = {
   ],
   plugins: ["@typescript-eslint", "prettier"],
   rules: {
+    "@next/next/no-page-custom-font": "off",
     "react/no-unescaped-entities": "off",
     "@typescript-eslint/ban-ts-comment": "off",
     "@typescript-eslint/no-explicit-any": "off",

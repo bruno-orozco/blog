@@ -22,14 +22,17 @@ const H1 = styled("h1", {
 const FourOhFour = () => {
   return (
     <>
-      <NextSeo title="404 Not Found" />
+      <NextSeo description="La página que buscas no está disponible. Vuelve al inicio para seguir navegando en nuestro sitio." />
 
       <Center>
-        <Image src={pandaGif} alt="404s make panda angry..." quality={30} />
+        <Image src={pandaGif} alt="404: El panda está molesto porque no encontró la página" quality={30} />
 
-        <H1>404: Page Not Found 😢</H1>
+        <H1>404: Página No Encontrada 😢</H1>
+        <p>Lo sentimos, no pudimos encontrar la página que estás buscando.</p>
 
-        <Link href="/">Go home?</Link>
+        <Link href="/" aria-label="Volver a la página de inicio">
+          Volver al inicio
+        </Link>
       </Center>
     </>
   );
