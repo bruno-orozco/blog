@@ -62,11 +62,14 @@ const Note = ({ frontMatter, source }: NoteWithSource) => {
 
       {!frontMatter.noComments && (
         <InView rootMargin="140px" triggerOnce fallbackInView>
-          {({ inView, ref }) => (
-            <div id="comments" ref={ref}>
-              {inView && <Comments title={frontMatter.title} />}
-            </div>
-          )}
+          {({ inView, ref }) => {
+            console.log("frontMatter when comments are enabled:", frontMatter); // Esto se ejecuta solo si noComments es false
+            return (
+              <div id="comments" ref={ref}>
+                {inView && <Comments title={frontMatter.title} />}
+              </div>
+            );
+          }}
         </InView>
       )}
     </>
