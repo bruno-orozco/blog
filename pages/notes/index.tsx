@@ -8,10 +8,10 @@ const Notes = ({ notesByYear }: NotesListProps) => {
   return (
     <>
       <NextSeo
-        title="Notes"
-        description="Recent posts by Jake Jarvis."
+        title="Notas"
+        description="Notas recientes por Bruno Orozco."
         openGraph={{
-          title: "Notes",
+          title: "Notas",
         }}
       />
 

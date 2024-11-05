@@ -4,17 +4,17 @@ import type { MenuItemProps } from "../../components/MenuItem";
 export const menuItems: MenuItemProps[] = [
   {
     icon: HomeIcon,
-    text: "Home",
+    text: "Inicio",
     href: "/",
   },
   {
     icon: NotesIcon,
-    text: "Notes",
+    text: "Notas",
     href: "/notes",
   },
   {
     icon: ProjectsIcon,
-    text: "Projects",
+    text: "Proyectos",
     href: "/projects",
   },
 ];
