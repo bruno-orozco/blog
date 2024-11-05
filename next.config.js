@@ -101,6 +101,10 @@ module.exports = (phase, { defaultConfig }) => {
             key: "x-got-milk",
             value: "2%",
           },
+          {
+            key: "Content-Security-Policy",
+            value: "frame-ancestors 'self' https://giscus.app; frame-src https://giscus.app",
+          },
         ],
       },
       {
@@ -135,6 +139,8 @@ module.exports = (phase, { defaultConfig }) => {
       { source: "/rss/", destination: "/feed.xml", permanent: true },
       { source: "/blog/:path*", destination: "/notes/", permanent: true },
       { source: "/archives/:path*", destination: "/notes/", permanent: true },
+
+      { source: "/scrabble/:path*", destination: "https://bruno-orozco/scrabble/:path*", permanent: false },
     ],
   };
 
