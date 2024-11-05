@@ -30,20 +30,8 @@ const Comments = ({ title, ...rest }: CommentsProps) => {
           term={title}
           mapping="specific"
           reactionsEnabled="1"
-          emitMetadata="0"
-          theme={activeTheme === "dark" ? activeTheme : "light"}
-        />
-      </Wrapper>
-      <Wrapper {...rest}>
-        <Giscus
-          repo="bruno-orozco/blog"
-          repoId={giscusConfig.repoId}
-          category={giscusConfig.category}
-          categoryId={giscusConfig.categoryId}
-          term={title}
-          mapping="specific"
-          reactionsEnabled="1"
-          emitMetadata="0"
+          emitMetadata="1"
+          lang="es"
           theme={activeTheme === "dark" ? activeTheme : "light"}
         />
       </Wrapper>
