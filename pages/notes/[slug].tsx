@@ -3,7 +3,7 @@ import { NextSeo, ArticleJsonLd } from "next-seo";
 import { MDXRemote } from "next-mdx-remote";
 import Content from "../../components/Content";
 import NoteMeta from "../../components/NoteMeta";
-import Comments from "../../components/Comments";
+import  Comments from "../../components/Comments";
 import * as mdxComponents from "../../lib/helpers/mdx-components";
 import { getNoteSlugs } from "../../lib/helpers/parse-notes";
 import { compileNote } from "../../lib/helpers/compile-note";

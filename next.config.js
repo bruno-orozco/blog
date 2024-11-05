@@ -103,7 +103,7 @@ module.exports = (phase, { defaultConfig }) => {
           },
           {
             key: "Content-Security-Policy",
-            value: "frame-ancestors 'self' https://giscus.app; frame-src https://giscus.app https://vercel.live",
+            value: "frame-ancestors 'self' https://giscus.app; frame-src https://giscus.app https://vercel.live https://github.com",
           },
         ],
       },
