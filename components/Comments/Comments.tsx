@@ -26,13 +26,18 @@ const Comments = ({ title, ...rest }: CommentsProps) => {
     <div>
       <Wrapper {...rest}>
         <Giscus
-          {...(giscusConfig as GiscusProps)}
-          term={title}
+          id="giscus-comments"
+          repo={giscusConfig.repo}
+          repoId={giscusConfig.repoId}
+          category={giscusConfig.category}
+          categoryId={giscusConfig.categoryId}
           mapping="specific"
+          term={title}
+          strict="1"
           reactionsEnabled="1"
           emitMetadata="1"
           lang="es"
-          theme={activeTheme === "dark" ? activeTheme : "light"}
+          theme={activeTheme === "dark" ? "dark" : "light"}
         />
       </Wrapper>
     </div>
