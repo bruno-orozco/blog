@@ -5,7 +5,7 @@ module.exports = {
   root: true,
   parser: "@typescript-eslint/parser",
   extends: [
-    "@jakejarvis/eslint-config",
+    // "@jakejarvis/eslint-config", // temporarily disabled due to configuration error
     "next/core-web-vitals",
     "plugin:@typescript-eslint/recommended",
     "plugin:prettier/recommended",

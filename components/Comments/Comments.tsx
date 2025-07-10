@@ -27,7 +27,7 @@ const Comments = ({ title, ...rest }: CommentsProps) => {
       <Wrapper {...rest}>
         <Giscus
           id="giscus-comments"
-          repo={giscusConfig.repo}
+          repo={githubRepo as `${string}/${string}`}
           repoId={giscusConfig.repoId}
           category={giscusConfig.category}
           categoryId={giscusConfig.categoryId}
